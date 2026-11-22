@@ -2,7 +2,7 @@
 
 **Paper:** Cohler, J. and Soon, W. *Bomb-Radiocarbon Decay Falsifies the IPCC (Part II).*
 Appendix A.1. The exact version this file documents is
-[`paper/bomb14c-scc-part2.pdf`](paper/bomb14c-scc-part2.pdf) in this repository.
+[`paper/bomb14c_scc_part2.pdf`](paper/bomb14c_scc_part2.pdf) in this repository.
 **Formalization:** this repository, files `Asene/SumOfExponentials.lean` and `Asene/LogCurvature.lean`.
 
 Each item in Appendix A.1 maps to the Lean declaration named below.
@@ -41,8 +41,6 @@ you are viewing.
   that `d ≠ 0`. `sum_exp_ne_exp_of_ne_zero` proves it under exactly those
   hypotheses. `sum_exp_ne_exp` states the Theorem as written in the paper
   (positive `d` and `c_k`, `n > 1`) and derives it from the general version.
-- Eq. (64) writes the exponent as `e^{−λ_i t}` inside a sum over `k`. The
-  intended exponent is `e^{−λ_k t}`, which is what Lean uses.
 - The curvature proof follows the paper's sign convention `y(t) = Σ c_k e^{−λ_k t}`.
   The strict inequality in (66) needs the vectors `a_k = √w_k` and
   `b_k = λ_k √w_k` not to be proportional. That holds exactly when two of the
